@@ -1,0 +1,49 @@
+var x = 10;
+var y = 10;
+var dim = 80.0
+
+var value;
+
+
+function setup() {
+  createCanvas(400, 400);
+ background(220);
+}
+
+
+function draw() {
+ 	background(width - mouseX)
+  stroke(0, 255, 225);
+  strokeWeight("random");
+  fill(200, 210, 225); // color
+  rect(0, 200, 80, 200); //building 1
+  fill(0, 225, 225); // color of roof
+  rect(40, 180, 20, 20); //roof left
+  rect(20, 180, 20, 20); // roof right
+  line(40, 120, 40, 200); // antenna
+  fill("yellow");
+  ellipse(mouseX, mouseY, 50, 50); // sun
+  fill(200, 55, 100);// color
+	rect(80, 350, 100, 50);// rect behind building 2
+	ellipse(130, 350, 100); //building 2
+	fill(100, 100, 100);
+  rect(180, 200, 80, 200); //building 3
+	line(220, 200, 220, 120); //antenna
+	rect(200, 180, 20, 20);
+	rect(220, 180, 20, 20);
+
+}
+
+
+function mousePressed() {
+  if (value === 0) {
+    value = 255;
+  } else {
+    value = 0;
+  }
+}
+
+function mouseMoved(){
+  
+  
+}
